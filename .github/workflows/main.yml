@@ -2,7 +2,7 @@ name: Hello World # workflow 이름
 
 on:
   push: # push했을 때 작업
-    branches: [ main ]
+    branches: [ master ]
 
   workflow_dispatch:
 
