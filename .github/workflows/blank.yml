@@ -1,0 +1,20 @@
+name: Hello World # workflow 이름
+
+on:
+  push: # push했을 때 작업
+    branches: [ main ]
+
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest # 구동 되는 컴퓨터 종류
+
+    steps: # 벌어지는 일
+      # - uses: actions/checkout@v2
+
+      - name: Run pwd
+        run: pwd
+
+      - name: Run ls -al
+        run: ls -al
